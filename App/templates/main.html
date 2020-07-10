@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="{{ static_url("main.css") }}">
+	<script src="https://d3js.org/d3.v3.min.js"></script>	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	{% block header %}{% end %}
+</head>
+<body>
+    <table>
+    	<tr>
+    		<th>
+				<div class="container">
+					<label for="url"><b>Looker URL</b></label>
+			    	<input type="text" name="looker_url" id="looker_url" required>
+
+			    	<label for="client_id"><b>Client ID</b></label>
+			    	<input type="text" name="client_id" id="client_id" required>
+
+			    	<label for="client_secret"><b>Client Secret</b></label>
+			    	<input type="password" name="client_secret" id="client_secret" required>
+
+			    	<button id="submit_buttom" type="submit" onclick="login()">Submit</button>
+				</div>
+			</th>
+			<th>
+				<div class="container">
+					<p>Select Model</p>
+				  	<select name="model" id="model_select"></select>
+				  	<button onclick="displayExploreSelector()">Select</button>
+				</div>	
+			</th>
+			<th>
+				<div class="container">
+					<p>Select Explore</p>
+				  	<select name="explore" id="explore_select"></select>
+				  	<button  onclick="getExploreData()" >Visualize</button>
+				</div>	
+			</th>
+		</tr>
+	</table>
+	<div id="d3"></div>
+
+</body>
+<script type="text/javascript" src="{{ static_url("main.js") }}"></script>
+</html>

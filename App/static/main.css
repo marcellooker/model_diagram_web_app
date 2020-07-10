@@ -1,0 +1,87 @@
+@font-face
+{
+    font-family:Glode-Light;
+    src: url('fonts/GeosansLight.ttf');
+}
+
+@font-face
+{
+    font-family:Blue;
+    src: url('fonts/Blue.ttf');
+}
+
+@font-face
+{
+    font-family:Prototype;
+    src: url('fonts/Prototype.ttf');
+}
+
+
+.dimension {
+    text-decoration: none;
+    color:#4963c1;
+    font-family:"Prototype", "Arial";
+}
+.measure {
+    text-decoration: none;
+    color:#c18948;
+    font-family:"Prototype", "Arial";
+}
+
+.container {
+    margin-left:10px;
+    margin-right:40px;
+}
+
+.fieldViewer {
+    position: absolute;
+    height: 100px;
+    width: 500;
+    border: 4px solid #7968d9;
+    background-color: #DDD;
+    z-index: 10;
+    font-size: 14px;
+}
+
+.fields {
+    width: 250px;
+    height: 100px;
+    overflow: scroll;  
+    text-align: left;
+    text-decoration: none;
+}
+
+.dimensions {
+    border-right: 1px solid #7968d9;
+}
+
+.holder {
+    margin-left:100px;
+}
+
+.node circle {
+    cursor: pointer;
+    fill: #fff;
+    stroke: #7968d9;
+    stroke-width: 4px;
+}
+
+.node rect {
+    cursor: pointer;
+    fill: #fff;
+    stroke: #7968d9;
+    stroke-width: 4px;
+}
+
+.node text {
+    font-size: 14px;
+    /*border-style: 2px solid purple;*/
+}
+
+path.link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1.5px;
+    }
+
+    
